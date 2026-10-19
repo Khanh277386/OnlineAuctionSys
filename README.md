@@ -1,122 +1,129 @@
 classDiagram
-    %% Giao diện cơ sở
-    class Entity {
-        <<interface>>
-        +getId() String
-    }
 
-    %% Cụm Người dùng (User Hierarchy)
-    class User {
-        <<abstract>>
-        -String id
-        -String username
-        -String password
-        -String role
-        +printInfo() void
-        +getId() String
-        +getUsername() String
-        +getRole() String
-    }
+%% Giao tiếp cơ sở
+class Entity {
+    <<Interface>>
+    +getId() String
+}
 
-    class Bidder {
-        -double maxAutoBid
-        +printInfo() void
-        +getMaxAutoBid() double
-    }
+%% Cụm Người dùng (User Hierarchy)
+class User {
+    <<abstract>>
+    -String id
+    -String username
+    -String password
+    -String role
+    +printInfo()* void
+    +getId() String
+    +getUsername() String
+    +getRole() String
+}
 
-    class Admin {
-        +printInfo() void
-    }
+class Bidder {
+    -double maxAutoBid
+    +printInfo() void
+    +getMaxAutoBid() double
+}
 
-    class Seller {
-        -double rating
-        +printInfo() void
-        +getRating() double
-    }
+class Admin {
+    +printInfo() void
+}
 
-    Entity <|.. User : implements
-    User <|-- Bidder : extends
-    User <|-- Admin : extends
-    User <|-- Seller : extends
+class Seller {
+    -double rating
+    +printInfo() void
+    +getRating() double
+}
 
-    %% Cụm Sản phẩm & Factory (Item Hierarchy)
-    class Item {
-        <<abstract>>
-        -String id
-        -String title
-        -String description
-        -double startingPrice
-        -String sellerId
-        +getCategory() String
-        +printDetails() void
-        +getId() String
-        +getStartingPrice() double
-    }
+Entity <|.. User : implements
+User <|-- Bidder : extends
+User <|-- Admin : extends
+User <|-- Seller : extends
 
-    class Electronics {
-        -String brand
-        -int warrantyMonths
-        +getCategory() String
-        +printDetails() void
-    }
+%% Cụm Sản phẩm & Factory (Item Hierarchy)
+class Item {
+    <<abstract>>
+    -String id
+    -String title
+    -String description
+    -double startingPrice
+    -String sellerId
+    +getCategory()* String
+    +printDetails()* void
+    +getId() String
+    +getStartingPrice() double
+}
 
-    class Art {
-        -String artist
-        -int yearCreated
-        +getCategory() String
-        +printDetails() void
-    }
+class Electronics {
+    -String brand
+    -int warrantyMonths
+    +getCategory() String
+    +printDetails() void
+}
 
-    class Vehicle {
-        -int modelYear
-        -double mileage
-        +getCategory() String
-        +printDetails() void
-    }
+class Art {
+    -String artist
+    -int yearCreated
+    +getCategory() String
+    +printDetails() void
+}
 
-    class ItemFactory {
-        +createItem(String type, String id, String title, double price) Item
-    }
+class Vehicle {
+    -int modelYear
+    -double mileage
+    +getCategory() String
+    +printDetails() void
+}
 
-    Entity <|.. Item : implements
-    Item <|-- Electronics : extends
-    Item <|-- Art : extends
-    Item <|-- Vehicle : extends
-    ItemFactory ..> Item : creates
+class ItemFactory {
+    +createItem(String type, String id, String title, double price) Item
+}
 
-    %% Cụm Nghiệp vụ Đấu giá & Quản lý
-    class Bid {
-        -String bidId
-        -String auctionId
-        -String bidderId
-        -double amount
-        -LocalDateTime timestamp
-        +getAmount() double
-        +getBidderId() String
-        +getTimestamp() LocalDateTime
-    }
+Entity <|.. Item : implements
+Item <|-- Electronics : extends
+Item <|-- Art : extends
+Item <|-- Vehicle : extends
+ItemFactory ..> Item : creates
 
-    class Auction {
-        -String auctionId
-        -double currentPrice
-        -String status
-        -LocalDateTime startTime
-        -LocalDateTime endTime
-        +placeBid(Bidder bidder, double amount) boolean
-        +closeAuction() void
-        +getWinningBidder() Bidder
-    }
+%% Cụm Nghiệp vụ Đấu giá & Quản lý
+class Bid {
+    -String bidId
+    -String auctionId
+    -String bidderId
+    -double amount
+    -LocalDateTime timestamp
+    +getAmount() double
+    +getBidderId() String
+    +getTimestamp() LocalDateTime
+}
 
-    class AuctionManager {
-        -AuctionManager instance$
-        -Map~String, Auction~ auctions
-        -AuctionManager()
-        +getInstance()$ AuctionManager
-        +createAuction(Item item, int durationMinutes) Auction
-        +getAuctionById(String id) Auction
-    }
+class Auction {
+    -String auctionId
+    -Item item
+    -double currentPrice
+    -String status
+    -LocalDateTime startTime
+    -LocalDateTime endTime
+    -List~Bid~ bids
+    -Bidder highestBidder
+    +placeBid(Bidder bidder, double amount) boolean
+    +closeAuction() void
+    +getWinningBidder() Bidder
+    +getItem() Item
+    +getCurrentPrice() double
+}
 
-    Auction "1" *-- "0..*" Bid : history
-    Auction "1" --> "1" Item : item
-    AuctionManager "1" o-- "0..*" Auction : manages
-    Bid ..> Bidder : references
+class AuctionManager {
+    -AuctionManager instance$
+    -Map~String, Auction~ auctions
+    -AuctionManager()
+    +getInstance()$ AuctionManager
+    +createAuction(Item item, int durationMinutes) Auction
+    +getAuctionById(String id) Auction
+}
+
+AuctionManager "1" o-- "0..*" Auction : manages
+Auction "1" *-- "1" Item : contains
+Auction "1" *-- "0..*" Bid : contains
+Auction ..> Bidder : uses
+Bid ..> Bidder : references
