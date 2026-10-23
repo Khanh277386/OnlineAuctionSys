@@ -4,26 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/auction/Auction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/auction/AuctionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/auction/Bid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/item/Art.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/item/Electronics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/item/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/item/ItemFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/item/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/user/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/user/Bidder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/user/Seller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/model/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="các lớp cơ bản">
+      <change afterPath="$PROJECT_DIR$/src/Auction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineAuctionSys" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineAuctionSys.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Art.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Electronics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/ItemFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/auction/Auction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/auction/AuctionStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/auction/Bid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/Art.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/Electronics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/ItemFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/user/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/user/Bidder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/user/Seller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Art.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Electronics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/ItemFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Vehicle.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +53,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -66,23 +85,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.selected.package.jshint": "",
-    "onboarding.tips.debug.path": "C:/Users/failb/IdeaProjects/OnlineAuctionSys-dev/src/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/auction-core&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/failb/IdeaProjects/OnlineAuctionSys-dev/src/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="OnlineAuctionSys-dev" />
@@ -111,6 +130,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="các lớp cơ bản" />
+    <option name="LAST_COMMIT_MESSAGE" value="các lớp cơ bản" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
