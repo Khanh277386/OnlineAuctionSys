@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="các lớp cơ bản">
-      <change afterPath="$PROJECT_DIR$/src/Auction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineAuctionSys" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineAuctionSys.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Art.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Electronics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Entity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/ItemFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/auction/Auction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/auction/AuctionStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/auction/Bid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/Art.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/Electronics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/ItemFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/item/Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/user/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/user/Bidder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/user/Seller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/model/user/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Art.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Electronics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Entity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/ItemFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/auction/model/Vehicle.class" beforeDir="false" />
-    </list>
+    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="lõi của hệ thống đấu giá" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
