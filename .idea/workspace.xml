@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="lõi của hệ thống đấu giá" />
+    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="lõi của hệ thống đấu giá">
+      <change beforePath="$PROJECT_DIR$/.idea/src/Auction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src/Bid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,9 +102,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="các lớp cơ bản" />
-    <option name="LAST_COMMIT_MESSAGE" value="các lớp cơ bản" />
+    <MESSAGE value="lõi của hệ thống đấu giá" />
+    <option name="LAST_COMMIT_MESSAGE" value="lõi của hệ thống đấu giá" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
