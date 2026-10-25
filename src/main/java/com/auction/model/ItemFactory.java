@@ -1,7 +1,7 @@
 package com.auction.model;
 
 public class ItemFactory {
-    public Item createItem(String type, String Id, String title, double price){
+    public Item createItem(String type, String Id, String name, double price){
         if (type == null){
             return null;
         }
@@ -10,13 +10,13 @@ public class ItemFactory {
 // 2. Tối ưu hiệu năng tìm kiếm các nhánh
         switch (type.toLowerCase()){
             case "electronics":
-                return new Electronics(Id,title,"N/A", price, "N/A", "Unknown", 0) ;
+                return new Electronic(Id,name,"N/A", "Unknown", null, 0.0, 0) ;
 
             case "art":
-                return new Art(Id, title, "N/A", price, "N/A", "Unknown", 0);
+                return new Art(Id, name, "N/A", null, "Unknown","Unknown", 0);
 
             case "vehicle" :
-                return new Vehicle(Id, title, "N/A", price, "N/A",0, 0.0);          
+                return new Vehicle(Id, name, "N/A", null, "Unknown","N/A", "N/A", 0.0);          
             
             default:
                 throw new IllegalArgumentException("Loai item khong hop le: " + type);

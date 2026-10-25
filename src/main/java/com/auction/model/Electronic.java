@@ -3,7 +3,13 @@ package com.auction.model;
 public class Electronics extends Item{
     private String brand;
     private int warrantyMonths;
-
+    
+    public Electronics(String Id, String title, String description, double StartingPrice, String sellerId, String brand, int warrantyMonths) {
+    super(Id, title, description, StartingPrice, sellerId); // Gọi hàm khởi tạo của Item
+    this.brand = brand;
+    this.warrantyMonths = warrantyMonths;
+}
+    
     @Override
     public String getCategory(){
         return "Đồ điện tử";
