@@ -1,26 +1,22 @@
 package com.auction.model;
 
-public class Electronics extends Item{
-    private String brand;
-    private int warrantyMonths;
+public class Electronic extends Item{
+    private double durability;
+    private int warranty;
     
-    public Electronics(String Id, String title, String description, double StartingPrice, String sellerId, String brand, int warrantyMonths) {
-    super(Id, title, description, StartingPrice, sellerId); // Gọi hàm khởi tạo của Item
-    this.brand = brand;
-    this.warrantyMonths = warrantyMonths;
+    public Electronic(String Id, String name, String description,  String sellerId,Seller seller, double durability, int warranty) {
+    super(Id, name, description, sellerId , seller); // Gọi hàm khởi tạo của Item
+    this.durability = durability;
+    this.warranty = warranty;
 }
     
-    @Override
-    public String getCategory(){
-        return "Đồ điện tử";
+    
+    public int getWarrantyInfo(){
+        return warranty;
     }
 
-    @Override
-    public void printDetails() {
-    System.out.println("ID: " + getId() + 
-                       " | Danh mục: " + getCategory() + 
-                       " | Thương hiệu: " + brand + 
-                       " | Bảo hành: " + warrantyMonths + " tháng" +
-                       " | Giá khởi điểm: $" + getStartingPrice());
+   
+    public double getDurabilityInfo() {
+        return durability;
     }
 }

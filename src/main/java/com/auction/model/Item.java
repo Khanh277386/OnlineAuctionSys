@@ -2,28 +2,30 @@ package com.auction.model;
 
 public abstract class Item implements Entity{
     private String Id;
-    private String title;
+    private String name;
     private String description;
-    private double StartingPrice;
     private String sellerId;
-    public Item(String Id, String title, String description, double StartingPrice, String sellerId) {
+    private Seller seller;
+    public Item(String Id, String name, String description,  String sellerId, Seller seller) {
         this.Id = Id;
-        this.title = title;
+        this.name = name;
         this.description = description;
-        this.StartingPrice = StartingPrice;
         this.sellerId = sellerId;
+        this.seller = seller;
     }
 
-    public abstract String getCategory();
+    public String getName(){
+        return name;
+    }
 
-    public abstract void printDetails();
+    public String getDescription(){
+        return description;
+    }
 
     public String getId(){
         return Id;
     } 
 
-    public double getStartingPrice(){
-        return StartingPrice;
-    }
+    
 
 }
