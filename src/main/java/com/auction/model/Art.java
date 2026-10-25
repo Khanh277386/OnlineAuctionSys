@@ -2,20 +2,21 @@ package com.auction.model;
 
 public class Art extends Item {
     
-    private String artist;
-    private int yearCreated;
+    private String style;
+    private int age;
+    public Art(String Id, String name, String description, Seller seller, String sellerId, String style, int age) {
+    super(Id, name, description, sellerId, seller); // Gọi hàm khởi tạo của Item
+    this.style = style;
+    this.age = age;
+}
 
-    @Override
-    public String getCategory(){
-        return "Đồ nghệ thuật";
+ 
+    public String getStyle(){
+        return style;
     }
 
-    @Override
-    public void printDetails() {
-    System.out.println("ID: " + getId() + 
-                       " | Danh mục: " + getCategory() + 
-                       " | Tác giá: "+ artist +
-                       " | Năm sáng tác" + yearCreated +
-                       " | Giá khởi điểm: $" + getStartingPrice());
+  
+    public int getAge() {
+        return age;
     }
 }

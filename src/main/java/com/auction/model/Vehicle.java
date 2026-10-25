@@ -1,21 +1,24 @@
 package com.auction.model;
 
 public class Vehicle extends Item{
-    private int modelYear;
-    private double mileage;
-    
-    @Override
-    public String getCategory(){
-        return "Phương tiện di chuyển";
+    private String model;
+    private String brand;
+    private double metre;
+    public Vehicle(String Id, String title, String description, Seller seller, String sellerId, String model, String brand, double metre) {
+    super(Id, title, description, sellerId, seller); // Gọi hàm khởi tạo của Item
+    this.model = model;
+    this.brand = brand;
+    this.metre = metre;
+}
+    public String getModel(){
+        return model;
     }
 
-    @Override
-    public void printDetails() {
-    System.out.println("ID: " + getId() + 
-                       " | Danh mục: " + getCategory() + 
-                       " | Mẫu năm: " + modelYear +
-                       " | Số mile đã đi: " + mileage + 
-                       " | Giá khởi điểm: $" + getStartingPrice());
+    public String getBrand() {
+        return brand;
     }
     
+    public double getStat(){
+        return metre;
+    }
 }
