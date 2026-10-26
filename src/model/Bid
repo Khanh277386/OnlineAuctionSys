@@ -1,0 +1,113 @@
+package auction.model;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
+
+/**
+ * Lớp biểu diễn một giao dịch đặt giá trong phiên đấu giá.
+ */
+public class Bid implements Entity, Serializable {
+    private static final long serialVersionUID = 1L;
+
+    private String id;
+    private String auctionId;
+    private Bidder bidder;
+    private Seller seller;
+    private double amount;
+    private LocalDateTime timestamp;
+
+    public Bid(String id, String auctionId, Bidder bidder, Seller seller, double amount) {
+        this(id, auctionId, bidder, seller, amount, LocalDateTime.now());
+    }
+
+    public Bid(String id, String auctionId, Bidder bidder, Seller seller,
+               double amount, LocalDateTime timestamp) {
+        if (id == null || id.trim().isEmpty()) {
+            throw new IllegalArgumentException("Mã lượt đặt giá (id) không hợp lệ.");
+        }
+        if (auctionId == null || auctionId.trim().isEmpty()) {
+            throw new IllegalArgumentException("Mã phiên đấu giá (auctionId) không hợp lệ.");
+        }
+        if (bidder == null || seller == null) {
+            throw new IllegalArgumentException("Bidder và Seller không được null.");
+        }
+        if (amount <= 0) {
+            throw new IllegalArgumentException("Số tiền đặt giá phải lớn hơn 0.");
+        }
+        this.id = id;
+        this.auctionId = auctionId;
+        this.bidder = bidder;
+        this.seller = seller;
+        this.amount = amount;
+        this.timestamp = (timestamp != null) ? timestamp : LocalDateTime.now();
+    }
+
+    /**
+     * Xử lý thanh toán từ Bidder sang Seller khi phiên đấu giá kết thúc.
+     * Đồng bộ hóa để tránh xung đột số dư.
+     *
+     * @return true nếu thanh toán thành công, false nếu số dư không đủ
+     */
+    public synchronized boolean processPayment() {
+        if (bidder == null || seller == null || amount <= 0) {
+            return false;
+        }
+        if (bidder.getBalance() < amount) {
+            return false;
+        }
+        // Trừ tiền của Bidder (dùng addFund với số âm hoặc cập nhật balance)
+        bidder.addFund(-amount);
+        // Cộng doanh thu cho Seller
+        seller.setBalance(seller.getBalance() + amount);
+        return true;
+    }
+
+    @Override
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getAuctionId() {
+        return auctionId;
+    }
+
+    public void setAuctionId(String auctionId) {
+        this.auctionId = auctionId;
+    }
+
+    public Bidder getBidder() {
+        return bidder;
+    }
+
+    public void setBidder(Bidder bidder) {
+        this.bidder = bidder;
+    }
+
+    public Seller getSeller() {
+        return seller;
+    }
+
+    public void setSeller(Seller seller) {
+        this.seller = seller;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public LocalDateTime getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(LocalDateTime timestamp) {
+        this.timestamp = timestamp;
+    }
+}

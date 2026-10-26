@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="lõi của hệ thống đấu giá">
-      <change beforePath="$PROJECT_DIR$/.idea/src/Auction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/Bid.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Auction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/AuctionItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Bid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Observer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Subject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bid.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +35,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -58,6 +62,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Git.Working.Tree.Tab.closed.by.user&quot;: &quot;closed&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
