@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="OnlineAuctionSys" />
+        <module name="OnlineAuctionSys (1)" />
       </profile>
     </annotationProcessing>
   </component>
