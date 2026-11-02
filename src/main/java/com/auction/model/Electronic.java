@@ -4,8 +4,8 @@ public class Electronic extends Item{
     private double durability;
     private int warranty;
     
-    public Electronic(String Id, String name, String description,  String sellerId,Seller seller, double durability, int warranty) {
-    super(Id, name, description, sellerId , seller); // Gọi hàm khởi tạo của Item
+    public Electronic(String id, String name, String description, Seller seller, double durability, int warranty) {
+    super(id, name, description, seller); 
     this.durability = durability;
     this.warranty = warranty;
 }
@@ -14,9 +14,15 @@ public class Electronic extends Item{
     public int getWarrantyInfo(){
         return warranty;
     }
-
    
     public double getDurabilityInfo() {
         return durability;
     }
+
+    @Override
+    public void printInfo() {
+    System.out.println("Item: " + getName() + " | Type: Electronic" + 
+                                    " WarrantyInfo: " + getWarrantyInfo() 
+                                + " DurabilityInfo: "+ getDurabilityInfo());
+}
 }
