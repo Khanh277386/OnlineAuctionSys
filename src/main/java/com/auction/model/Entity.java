@@ -1,5 +1,4 @@
 package com.auction.model;
-import java.io.Serializable;
-public interface Entity extends Serializable {
+public interface Entity {
     String getId();
 }
