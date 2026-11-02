@@ -41,9 +41,5 @@ public class ItemManager {
         return result;
     }
 
-    public void updateItem(String itemId, String requester) {
-    }
-
-    public void deleteItem(String itemId, String requester) {
-    }
+    
 }
