@@ -1,13 +1,19 @@
-package com.auction.model;
+package com.auction.factory;
 
+import com.auction.model.Art;
+import com.auction.model.Electronic;
+import com.auction.model.Item;
+import com.auction.model.ItemType;
+import com.auction.model.Seller;
+import com.auction.model.Vehicle;
 import java.util.Map;
 import java.util.UUID;
 
-public class ItemFactory {
+public final class ItemFactory {
 
     public static Item createItem(ItemType type, String name, String description, Seller seller, Map<String, String> attributes) {
-        if (type == null) {
-            return null;
+         if (type == null || name == null || name.isBlank() || seller == null) {
+            throw new IllegalArgumentException("Thiếu loại, tên hoặc người bán của sản phẩm");
         }
 
 
@@ -15,25 +21,35 @@ public class ItemFactory {
 // Dùng switch-case thay vì if-else:
 // 1. Giúp code gọn gàng, dễ mở rộng khi thêm loại Item mới (Factory Pattern)
 // 2. Tối ưu hiệu năng tìm kiếm các nhánh
+    try {
         switch (type) {
             case ELECTRONIC:
-                double durability = Double.parseDouble(attributes.getOrDefault("durability", "100.0"));
-                int warranty = Integer.parseInt(attributes.getOrDefault("warranty", "12"));
-                return new Electronic(id, name, description, seller, durability, warranty);
+                return new Electronic(id, name, description, seller,
+                            Integer.parseInt(require(attributes, "warranty")),
+                            Double.parseDouble(require(attributes, "durability")));
 
             case ART:
-                String style = attributes.getOrDefault("style", "Unknown");
-                int age = Integer.parseInt(attributes.getOrDefault("age", "0"));
-                return new Art(id, name, description, seller, style, age);
+               return new Art(id, name, description, seller,
+                            require(attributes, "style"),
+                            Integer.parseInt(require(attributes, "age")));
 
             case VEHICLE:
-                String model = attributes.getOrDefault("model", "Unknown");
-                String brand = attributes.getOrDefault("brand", "Unknown");
-                double metre = Double.parseDouble(attributes.getOrDefault("metre", "0.0"));
-                return new Vehicle(id, name, description, seller, model, brand, metre);
+                return new Vehicle(id, name, description, seller,
+                            require(attributes, "model"),
+                            require(attributes, "brand"),
+                            Double.parseDouble(require(attributes, "mileage")));
 
             default:
                 throw new IllegalArgumentException("Loại item không hợp lệ: " + type);
         }
+    } catch (NumberFormatException e) {
+
+            throw new IllegalArgumentException("Thuộc tính số không hợp lệ: " + e.getMessage());
+        }
+    private static String require(Map<String, String> attributes, String key) {
+        if (attributes == null || !attributes.containsKey(key)) {
+            throw new IllegalArgumentException("Thiếu thuộc tính: " + key);
+        }
+        return attributes.get(key);
     }
 }
