@@ -1,8 +1,8 @@
 package com.auction.model;
 
 public class Electronic extends Item{
-    private double durability;
-    private int warranty;
+    private final double durability;
+    private final int warranty;
     
     public Electronic(String id, String name, String description, Seller seller, double durability, int warranty) {
     super(id, name, description, seller); 
@@ -21,8 +21,7 @@ public class Electronic extends Item{
 
     @Override
     public void printInfo() {
-    System.out.println("Item: " + getName() + " | Type: Electronic" + 
-                                    " WarrantyInfo: " + getWarrantyInfo() 
-                                + " DurabilityInfo: "+ getDurabilityInfo());
-}
+        System.out.println("[Điện tử] " + getName() + " - " + getDescription()
+                + " | Bảo hành: " + warranty + " tháng | Độ bền: " + durability + "%");
+    }
 }
