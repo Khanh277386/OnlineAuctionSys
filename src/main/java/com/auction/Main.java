@@ -1,4 +1,5 @@
 package com.auction;
+
 import com.auction.exception.AuctionException;
 import com.auction.manager.AuctionManager;
 import com.auction.manager.ItemManager;
@@ -13,6 +14,10 @@ import com.auction.model.User;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
+
+/**
+ * Chương trình chạy thử toàn bộ luồng nghiệp vụ trên console (chưa có GUI/Socket).
+ */
 public class Main {
 
     public static void main(String[] args) throws Exception {
@@ -96,6 +101,7 @@ public class Main {
         auctionManager.shutdown();
     }
 
+    /** Đặt giá và in kết quả, kể cả khi bị từ chối. */
     private static void tryBid(Auction auction, Bidder bidder, double amount) {
         try {
             auction.placeBid(bidder, amount);

@@ -17,7 +17,7 @@ public final class UserManager {
     private UserManager() {
     }
 
-    /** @return thể hiện duy nhất của UserManager */
+
     public static UserManager getInstance() {
         return INSTANCE;
     }
@@ -57,30 +57,20 @@ public final class UserManager {
 
     public User login(String username, String password) throws AuthenticationException {
         User user = (username == null) ? null : usersByName.get(username);
-        // Không nói rõ sai tên hay sai mật khẩu, tránh lộ thông tin tài khoản nào tồn tại
         if (user == null || !user.checkPassword(password)) {
             throw new AuthenticationException("Sai tên đăng nhập hoặc mật khẩu");
         }
         return user;
     }
 
-    /** @return người dùng theo id, hoặc null nếu không có */
     public User getUserById(String id) {
         return usersById.get(id);
     }
 
-    /** @return danh sách tất cả người dùng (bản sao) */
     public List<User> getAllUsers() {
         return new ArrayList<>(usersById.values());
     }
 
-    /**
-     * Xóa người dùng. Chỉ Admin được phép.
-     *
-     * @param targetId  id người cần xóa
-     * @param requester người yêu cầu xóa
-     * @throws AuthenticationException nếu người yêu cầu không phải Admin
-     */
     public void removeUser(String targetId, User requester) throws AuthenticationException {
         if (!(requester instanceof Admin)) {
             throw new AuthenticationException("Chỉ Admin được xóa người dùng");

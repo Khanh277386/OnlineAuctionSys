@@ -9,7 +9,7 @@ public class AuctionItem {
     private final LocalDateTime endTime;
     private final Item item;
 
-    public AuctionItem(Item item, double startPrice, double bidIncrement
+    public AuctionItem(Item item, double startPrice, double bidIncrement,
                         LocalDateTime startTime, LocalDateTime endTime){
         if (item == null){
             throw new IllegalArgumentException("Yêu cầu sản phẩm");
@@ -17,7 +17,7 @@ public class AuctionItem {
         if (startPrice <= 0 || bidIncrement <= 0){
             throw new IllegalArgumentException("Giá khởi điểm và bước giá phải lớn hơn 0");
         }
-        if (endTime == null || endTime == null || !endTime.isAfter(StartTime)){
+        if (endTime == null || endTime == null || !endTime.isAfter(startTime)){
             throw new IllegalArgumentException("Thời gian kết thúc phải sau thời gian bắt đầu");
         }
         this.item = item;

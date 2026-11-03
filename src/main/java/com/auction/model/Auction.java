@@ -54,9 +54,9 @@ public class Auction implements Entity, Subject{
             status = AuctionStatus.FINISHED;
             if (leading == null){
                 status = AuctionStatus.CANCELLED;
+            }
             } finally{
                 lock.unlock();
-            }
         }
     }
 
@@ -88,8 +88,7 @@ public class Auction implements Entity, Subject{
         }
     }
 
-    public Bid placeBid(Bidder bidder, double amount)
-        throw InvalidBidException, AuctionClosedException{
+    public Bid placeBid(Bidder bidder, double amount) throws InvalidBidException, AuctionClosedException{
         if (bidder == null){
             throw new InvalidBidException("Thiếu người");
         }
@@ -112,7 +111,7 @@ public class Auction implements Entity, Subject{
                 minAllowed = currentPrice + auctionItem.getIncrement();
             }
             if (amount < minAllowed) {
-                throw new InvalidBidException("Phải đặt từ " + String.format("%,.0f", mínAllowed) + " đổ lên");
+                throw new InvalidBidException("Phải đặt từ " + String.format("%,.0f", minAllowed) + " đổ lên");
             }
             if (amount > bidder.getBalance()) {
                 throw new InvalidBidException("Số dư không đủ đặt");
@@ -126,18 +125,23 @@ public class Auction implements Entity, Subject{
             lock.unlock();
         }
 
-        notifyObserver(newBid);
+        notifyObservers(newBid);
         return newBid;
     }
 
 
     public void attach(Observer observer){
-        if (observer != null && !observer.contains(observer)){
+        if (observer != null && !observers.contains(observer)){
             observers.add(observer);
         }
     }
 
-    public void notifyObserver(Bid bid){
+    public void detach(Observer observer){
+        observers.remove(observer);
+    }
+
+    @Override
+    public void notifyObservers(Bid bid) {
         for (Observer observer : observers){
             try{
                 observer.update(bid);
@@ -146,6 +150,7 @@ public class Auction implements Entity, Subject{
             }
         }
     }
+
     public String getId() {
         return id;
     }

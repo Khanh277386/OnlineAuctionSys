@@ -12,40 +12,37 @@ import java.util.UUID;
 public final class ItemFactory {
 
     public static Item createItem(ItemType type, String name, String description, Seller seller, Map<String, String> attributes) {
-         if (type == null || name == null || name.isBlank() || seller == null) {
+        if (type == null || name == null || name.isBlank() || seller == null) {
             throw new IllegalArgumentException("Thiếu loại, tên hoặc người bán của sản phẩm");
         }
 
 
         String id = UUID.randomUUID().toString();
-// Dùng switch-case thay vì if-else:
-// 1. Giúp code gọn gàng, dễ mở rộng khi thêm loại Item mới (Factory Pattern)
-// 2. Tối ưu hiệu năng tìm kiếm các nhánh
-    try {
-        switch (type) {
-            case ELECTRONIC:
-                return new Electronic(id, name, description, seller,
+        try {
+            switch (type) {
+                case ELECTRONIC:
+                    return new Electronic(id, name, description, seller,
                             Integer.parseInt(require(attributes, "warranty")),
                             Integer.parseInt(require(attributes, "durability")));
 
-            case ART:
-               return new Art(id, name, description, seller,
+                case ART:
+                    return new Art(id, name, description, seller,
                             require(attributes, "style"),
                             Integer.parseInt(require(attributes, "age")));
 
-            case VEHICLE:
-                return new Vehicle(id, name, description, seller,
+                case VEHICLE:
+                    return new Vehicle(id, name, description, seller,
                             require(attributes, "model"),
                             require(attributes, "brand"),
                             Double.parseDouble(require(attributes, "mileage")));
 
-            default:
-                throw new IllegalArgumentException("Loại item không hợp lệ: " + type);
-        }
-    } catch (NumberFormatException e) {
-
+                default:
+                    throw new IllegalArgumentException("Loại item không hợp lệ: " + type);
+            }
+        } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Thuộc tính số không hợp lệ: " + e.getMessage());
         }
+    }
     private static String require(Map<String, String> attributes, String key) {
         if (attributes == null || !attributes.containsKey(key)) {
             throw new IllegalArgumentException("Thiếu thuộc tính: " + key);

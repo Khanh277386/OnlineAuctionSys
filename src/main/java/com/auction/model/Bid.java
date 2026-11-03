@@ -38,13 +38,13 @@ public final class Bid implements Entity, Comparable<Bid> {
         return timestamp;
     }
 
-    public int compareTo(Bid bid) {
-        int byAmount = Double.compare(this.amount, bid.amount);
+    public int compareTo(Bid other) {
+        int byAmount = Double.compare(this.amount, other.amount);
         if (byAmount != 0) return byAmount;
         return this.timestamp.compareTo(other.timestamp);
     }
 
-    private toString(){
+    public String toString(){
         return bidder.getName() + " đặt " + String.format("%,.0f", amount) + " lúc " + timestamp;
     }
 }

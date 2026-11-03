@@ -5,26 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="feat(auction): cài đặt các lớp Auction, AuctionItem, Bid và mẫu Observer -m &#10;- Thêm giao diện Observer, Subject và enum AuctionStatus&#10;- Cài đặt AuctionItem quản lý giá, thời gian và gia hạn anti-sniping&#10;- Cài đặt lớp Bid và phương thức thanh toán đồng bộ processPayment&#10;- Cài đặt lớp Auction dùng ReentrantLock xử lý đặt giá đồng thời&#10;- Bổ sung ngoại lệ InvalidBidException và AuctionClosedException&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/exception/AuctionClosedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/exception/AuctionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/exception/AuthenticationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/exception/InvalidBidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/exception/UserAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/Auction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/AuctionItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/AuctionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/Bid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/observer/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_20_2026_8_41_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/Bidder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/ItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Auction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/AuctionItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Bid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Observer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Subject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/auction/model/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/auction/model/Bidder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/auction/model/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/auction/model/Seller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/auction/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auction/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/factory/ItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auction/factory/ItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/manager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auction/manager/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Art.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/Art.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Auction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/Auction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/AuctionItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/AuctionItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/auction/model/Bid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/auction/model/Bid.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,7 @@
         <option value="package-info" />
         <option value="SimpleSourceFile" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -70,6 +70,65 @@
     &quot;repository&quot;: &quot;OnlineAuctionSys&quot;
   }
 }</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.064297447620609E-57" />
+      <entry key="MS500" value="4.03099819910467E-12" />
+      <entry key="S2" value="0.0014169455154630648" />
+      <entry key="S5" value="0.0725339386170519" />
+      <entry key="S10" value="0.2693261161996921" />
+      <entry key="S30" value="0.7015061726665223" />
+      <entry key="S60" value="1.3818219467466673" />
+      <entry key="M2" value="2.775290672560231" />
+      <entry key="M5" value="4.999316640203758" />
+      <entry key="M10" value="7.013625185056651" />
+      <entry key="M15" value="8.486171266745366" />
+      <entry key="M30" value="11.08446163924186" />
+      <entry key="H1" value="13.138545578537393" />
+      <entry key="H2" value="14.449022974429996" />
+      <entry key="H4" value="15.191619635401498" />
+      <entry key="D1" value="15.860439313212696" />
+      <entry key="W1" value="15.979940877043596" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000017126" />
+      <entry key="S10" value="1.000001308640268" />
+      <entry key="S30" value="1.0109380547590443" />
+      <entry key="S60" value="1.1045851555386528" />
+      <entry key="M2" value="1.3233962825059262" />
+      <entry key="M5" value="1.6366401283006347" />
+      <entry key="M10" value="1.7978973168902344" />
+      <entry key="M15" value="1.8602631826115381" />
+      <entry key="M30" value="1.9275037372493644" />
+      <entry key="H1" value="1.9630699544941501" />
+      <entry key="H2" value="1.9813612762352864" />
+      <entry key="H4" value="1.9906368033922859" />
+      <entry key="D1" value="1.9984333440068873" />
+      <entry key="W1" value="1.9997760415850223" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.8527143621750574E-5" />
+      <entry key="MS500" value="0.11312580786429484" />
+      <entry key="S2" value="0.5813579609162526" />
+      <entry key="S5" value="0.8765385406504516" />
+      <entry key="S10" value="1.165755125649283" />
+      <entry key="S30" value="1.6754580555564684" />
+      <entry key="S60" value="2.4629939860426955" />
+      <entry key="M2" value="4.081108222615648" />
+      <entry key="M5" value="6.624830716142762" />
+      <entry key="M10" value="8.804066484617271" />
+      <entry key="M15" value="10.340594514967014" />
+      <entry key="M30" value="13.008315044588286" />
+      <entry key="H1" value="15.09951148977993" />
+      <entry key="H2" value="16.429244753922728" />
+      <entry key="H4" value="17.181662108868945" />
+      <entry key="D1" value="17.85876993060948" />
+      <entry key="W1" value="17.979702149922907" />
+    </decayedShown>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -85,30 +144,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Working.Tree.Tab.closed.by.user&quot;: &quot;closed&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#5 on feat/auction-core&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/failb/IdeaProjects/OnlineAuctionSys-dev/src/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Working.Tree.Tab.closed.by.user": "closed",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "#1 on dev",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "onboarding.tips.debug.path": "C:/Users/failb/IdeaProjects/OnlineAuctionSys-dev/src/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="OnlineAuctionSys-dev" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OnlineAuctionSys" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SharedIndexes">
