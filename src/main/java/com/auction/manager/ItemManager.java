@@ -1,12 +1,20 @@
-package com.auction.model;
+package com.auction.manager;
 
+import com.auction.exception.AuthenticationException;
+import com.auction.factory.ItemFactory;
+import com.auction.model.Admin;
+import com.auction.model.Item;
+import com.auction.model.ItemType;
+import com.auction.model.Seller;
+import com.auction.model.User;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.concurrent.ConcurrentHashMap;
-
 public final class ItemManager {
-   private static final ItemManager INSTANCE = new ItemManager();
+
+    private static final ItemManager INSTANCE = new ItemManager();
 
     private final ConcurrentHashMap<String, Item> items = new ConcurrentHashMap<>();
 
@@ -17,21 +25,19 @@ public final class ItemManager {
         return INSTANCE;
     }
 
-
     public Item addItem(Seller seller, ItemType type, String name, String description,
                         Map<String, String> attributes) {
         Item item = ItemFactory.createItem(type, name, description, seller, attributes);
         items.put(item.getId(), item);
         return item;
     }
-
-
     public void updateItem(String itemId, String newName, String newDescription, User requester)
             throws AuthenticationException {
         Item item = getItem(itemId);
         checkPermission(item, requester);
         item.update(newName, newDescription);
     }
+
     public void deleteItem(String itemId, User requester) throws AuthenticationException {
         Item item = getItem(itemId);
         checkPermission(item, requester);
@@ -45,6 +51,7 @@ public final class ItemManager {
         }
         return item;
     }
+
     public List<Item> getItemsBySeller(String sellerId) {
         List<Item> result = new ArrayList<>();
         for (Item item : items.values()) {
@@ -54,6 +61,7 @@ public final class ItemManager {
         }
         return result;
     }
+
     private void checkPermission(Item item, User requester) throws AuthenticationException {
         boolean isOwner = requester != null
                 && item.getSeller().getId().equals(requester.getId());
@@ -62,6 +70,4 @@ public final class ItemManager {
             throw new AuthenticationException("Bạn không có quyền với sản phẩm này");
         }
     }
-}
-    
 }
