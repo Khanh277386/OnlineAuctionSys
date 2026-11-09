@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="style: apply Google Java Style and add CheckStyle">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="ci: add GitHub Auctions workflows" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,61 +53,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3815648022401457" />
-      <entry key="MS500" value="1.8261597486364893" />
-      <entry key="S2" value="2.182475549808069" />
-      <entry key="S5" value="2.889148880370917" />
-      <entry key="S10" value="3.589750561914941" />
-      <entry key="S30" value="4.41344589993948" />
-      <entry key="S60" value="4.732233859208529" />
-      <entry key="M2" value="5.241372117606331" />
-      <entry key="M5" value="6.911623079051356" />
-      <entry key="M10" value="10.808891159448088" />
-      <entry key="M15" value="15.502834300791037" />
-      <entry key="M30" value="26.839066736508343" />
-      <entry key="H1" value="38.31584587190294" />
-      <entry key="H2" value="46.78864569272893" />
-      <entry key="H4" value="51.99453635114674" />
-      <entry key="D1" value="56.937781621204174" />
-      <entry key="W1" value="57.84667061647772" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000004311125" />
+      <entry key="S30" value="1.0021774754671704" />
+      <entry key="S60" value="1.105112394660087" />
+      <entry key="M2" value="1.7811579551510595" />
+      <entry key="M5" value="4.227732925955265" />
+      <entry key="M10" value="8.386520660056904" />
+      <entry key="M15" value="13.027728620342" />
+      <entry key="M30" value="24.64033725548503" />
+      <entry key="H1" value="36.96015429255931" />
+      <entry key="H2" value="46.32752843938139" />
+      <entry key="H4" value="52.176253862730206" />
+      <entry key="D1" value="57.787446338096075" />
+      <entry key="W1" value="58.8248265912968" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="2.2216753848707683E-169" />
-      <entry key="S10" value="4.713471331851407E-85" />
-      <entry key="S30" value="7.867522233300558E-29" />
-      <entry key="S60" value="9.744418315642264E-15" />
-      <entry key="M2" value="1.2429918148978522E-7" />
-      <entry key="M5" value="0.002529673892838304" />
-      <entry key="M10" value="0.0706839084951781" />
-      <entry key="M15" value="0.2150856841785542" />
-      <entry key="M30" value="0.6554110905219744" />
-      <entry key="H1" value="1.1447088874945173" />
-      <entry key="H2" value="1.513015266709279" />
-      <entry key="H4" value="1.7395297027964614" />
-      <entry key="D1" value="1.954022846815703" />
-      <entry key="W1" value="1.993366112772727" />
+      <entry key="S5" value="3.204301573583863E-189" />
+      <entry key="S10" value="5.6606624701884487E-95" />
+      <entry key="S30" value="3.88162380118097E-32" />
+      <entry key="S60" value="2.1644305294288186E-16" />
+      <entry key="M2" value="1.85251671243396E-8" />
+      <entry key="M5" value="0.0011813595189517066" />
+      <entry key="M10" value="0.04830358107333038" />
+      <entry key="M15" value="0.166872211185811" />
+      <entry key="M30" value="0.5772979877816882" />
+      <entry key="H1" value="1.0743311879890485" />
+      <entry key="H2" value="1.465766779858746" />
+      <entry key="H4" value="1.712153236079543" />
+      <entry key="D1" value="1.9488635559281504" />
+      <entry key="W1" value="1.9926133790527365" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.4103206663221686" />
-      <entry key="MS500" value="1.3175652299345748" />
-      <entry key="S2" value="1.997878339099761" />
-      <entry key="S5" value="2.7679798895429095" />
-      <entry key="S10" value="3.502439088838815" />
-      <entry key="S30" value="4.3734589520132685" />
-      <entry key="S60" value="4.710355983622072" />
-      <entry key="M2" value="5.229663807669017" />
-      <entry key="M5" value="6.908769251279438" />
-      <entry key="M10" value="10.876115373987615" />
-      <entry key="M15" value="15.714835162217975" />
-      <entry key="M30" value="27.491722991237808" />
-      <entry key="H1" value="39.45843425787541" />
-      <entry key="H2" value="48.300297771492495" />
-      <entry key="H4" value="53.733286681354095" />
-      <entry key="D1" value="58.89165862612009" />
-      <entry key="W1" value="59.840015469283344" />
+      <entry key="MS100" value="0.5625292423444047" />
+      <entry key="MS500" value="0.8913104958969712" />
+      <entry key="S2" value="0.9716441834078203" />
+      <entry key="S5" value="0.9885597004553992" />
+      <entry key="S10" value="0.9942633963351095" />
+      <entry key="S30" value="1.000241877408916" />
+      <entry key="S60" value="1.1036680491662059" />
+      <entry key="M2" value="1.7789336728104637" />
+      <entry key="M5" value="4.226208434009595" />
+      <entry key="M10" value="8.432364093718117" />
+      <entry key="M15" value="13.19214357919247" />
+      <entry key="M30" value="25.215176772609645" />
+      <entry key="H1" value="38.032479368541324" />
+      <entry key="H2" value="47.79196661055438" />
+      <entry key="H4" value="53.887635996658304" />
+      <entry key="D1" value="59.736163771326765" />
+      <entry key="W1" value="60.81741862328625" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -235,7 +232,8 @@
     <MESSAGE value="feat(auction): cài đặt các lớp Auction, AuctionItem, Bid và mẫu Observer -m &#10;- Thêm giao diện Observer, Subject và enum AuctionStatus&#10;- Cài đặt AuctionItem quản lý giá, thời gian và gia hạn anti-sniping&#10;- Cài đặt lớp Bid và phương thức thanh toán đồng bộ processPayment&#10;- Cài đặt lớp Auction dùng ReentrantLock xử lý đặt giá đồng thời&#10;- Bổ sung ngoại lệ InvalidBidException và AuctionClosedException&quot;" />
     <MESSAGE value="feat: gộp toàn bộ 4 nhánh" />
     <MESSAGE value="style: apply Google Java Style and add CheckStyle" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: apply Google Java Style and add CheckStyle" />
+    <MESSAGE value="ci: add GitHub Auctions workflows" />
+    <option name="LAST_COMMIT_MESSAGE" value="ci: add GitHub Auctions workflows" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
