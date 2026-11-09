@@ -1,9 +1,9 @@
 classDiagram
-    %% Giao diện cơ sở
-    class Entity {
-        <<interface>>
-        +getId() String
-    }
+%% Giao diện cơ sở
+class Entity {
+<<interface>>
++getId() String
+}
 
     %% Cụm Người dùng (User Hierarchy)
     class User {
