@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="ci: add GitHub Auctions workflows" />
+    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="ci: add GitHub Auctions workflows">
+      <change afterPath="$PROJECT_DIR$/docs/umldiagram.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/factory/ItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/factory/ItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/AuctionItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/AuctionItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auction-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/Demo_ClaudeTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dev" />
@@ -54,60 +62,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000004311125" />
-      <entry key="S30" value="1.0021774754671704" />
-      <entry key="S60" value="1.105112394660087" />
-      <entry key="M2" value="1.7811579551510595" />
-      <entry key="M5" value="4.227732925955265" />
-      <entry key="M10" value="8.386520660056904" />
-      <entry key="M15" value="13.027728620342" />
-      <entry key="M30" value="24.64033725548503" />
-      <entry key="H1" value="36.96015429255931" />
-      <entry key="H2" value="46.32752843938139" />
-      <entry key="H4" value="52.176253862730206" />
-      <entry key="D1" value="57.787446338096075" />
-      <entry key="W1" value="58.8248265912968" />
+      <entry key="MS500" value="1.000526583011608" />
+      <entry key="S2" value="1.254700171976235" />
+      <entry key="S5" value="1.877043007389355" />
+      <entry key="S10" value="2.3244146497269575" />
+      <entry key="S30" value="2.7451516118617936" />
+      <entry key="S60" value="2.965311310008008" />
+      <entry key="M2" value="3.687088384263655" />
+      <entry key="M5" value="6.156122705092416" />
+      <entry key="M10" value="10.321941578877667" />
+      <entry key="M15" value="14.96328585072954" />
+      <entry key="M30" value="26.581350312307574" />
+      <entry key="H1" value="38.916457554901605" />
+      <entry key="H2" value="48.300278954793775" />
+      <entry key="H4" value="54.160942727645356" />
+      <entry key="D1" value="59.784624806776286" />
+      <entry key="W1" value="60.824416392645766" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="3.204301573583863E-189" />
-      <entry key="S10" value="5.6606624701884487E-95" />
-      <entry key="S30" value="3.88162380118097E-32" />
-      <entry key="S60" value="2.1644305294288186E-16" />
-      <entry key="M2" value="1.85251671243396E-8" />
-      <entry key="M5" value="0.0011813595189517066" />
-      <entry key="M10" value="0.04830358107333038" />
-      <entry key="M15" value="0.166872211185811" />
-      <entry key="M30" value="0.5772979877816882" />
-      <entry key="H1" value="1.0743311879890485" />
-      <entry key="H2" value="1.465766779858746" />
-      <entry key="H4" value="1.712153236079543" />
-      <entry key="D1" value="1.9488635559281504" />
-      <entry key="W1" value="1.9926133790527365" />
+      <entry key="S5" value="1.3978503651950474E-189" />
+      <entry key="S10" value="3.738788605633646E-95" />
+      <entry key="S30" value="3.380399216563084E-32" />
+      <entry key="S60" value="2.0198584064531252E-16" />
+      <entry key="M2" value="1.789578577017217E-8" />
+      <entry key="M5" value="0.0011651384652221536" />
+      <entry key="M10" value="0.047970810547319616" />
+      <entry key="M15" value="0.16610492357815868" />
+      <entry key="M30" value="0.5759692346476607" />
+      <entry key="H1" value="1.073094094379908" />
+      <entry key="H2" value="1.4649226207025743" />
+      <entry key="H4" value="1.7116601364923134" />
+      <entry key="D1" value="1.9487699993534067" />
+      <entry key="W1" value="1.9925997135121558" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.5625292423444047" />
-      <entry key="MS500" value="0.8913104958969712" />
-      <entry key="S2" value="0.9716441834078203" />
-      <entry key="S5" value="0.9885597004553992" />
-      <entry key="S10" value="0.9942633963351095" />
-      <entry key="S30" value="1.000241877408916" />
-      <entry key="S60" value="1.1036680491662059" />
-      <entry key="M2" value="1.7789336728104637" />
-      <entry key="M5" value="4.226208434009595" />
-      <entry key="M10" value="8.432364093718117" />
-      <entry key="M15" value="13.19214357919247" />
-      <entry key="M30" value="25.215176772609645" />
-      <entry key="H1" value="38.032479368541324" />
-      <entry key="H2" value="47.79196661055438" />
-      <entry key="H4" value="53.887635996658304" />
-      <entry key="D1" value="59.736163771326765" />
-      <entry key="W1" value="60.81741862328625" />
+      <entry key="MS100" value="0.9460576467255959" />
+      <entry key="MS500" value="0.9894430183856304" />
+      <entry key="S2" value="1.2450572100279236" />
+      <entry key="S5" value="1.8663844914194976" />
+      <entry key="S10" value="2.3166287929112834" />
+      <entry key="S30" value="2.7417707154290945" />
+      <entry key="S60" value="2.9630621122332537" />
+      <entry key="M2" value="3.684474872460529" />
+      <entry key="M5" value="6.1544297397101" />
+      <entry key="M10" value="10.367373898186996" />
+      <entry key="M15" value="15.126881160932918" />
+      <entry key="M30" value="27.154834839178967" />
+      <entry key="H1" value="39.98753188294682" />
+      <entry key="H2" value="49.763865745664006" />
+      <entry key="H4" value="55.871827989873346" />
+      <entry key="D1" value="61.7332480246051" />
+      <entry key="W1" value="62.81699466411727" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -125,51 +133,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
-    &quot;Git.Working.Tree.Tab.closed.by.user&quot;: &quot;closed&quot;,
-    &quot;JUnit.AdminTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuctionManagerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuctionTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BidderTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ItemFactoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ItemManagerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserManagerTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.auction-system [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.auction-system [org.apache.maven.plugins:maven-checkstyle-plugin:3.3.1:check].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.auction-system [test].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;refactor/maven-modules&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/failb/IdeaProjects/OnlineAuctionSys/auction-common/src/main/java/com/auction/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;google-java-format.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Demo_ClaudeTest.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.ServerMain.executor": "Run",
+    "Git.Working.Tree.Tab.closed.by.user": "closed",
+    "JUnit.AdminTest.executor": "Run",
+    "JUnit.AuctionBiddingTest.executor": "Run",
+    "JUnit.AuctionManagerTest.executor": "Run",
+    "JUnit.AuctionTest.executor": "Run",
+    "JUnit.BidderTest.executor": "Run",
+    "JUnit.ItemFactoryTest.executor": "Run",
+    "JUnit.ItemManagerTest.executor": "Run",
+    "JUnit.UserManagerTest.executor": "Run",
+    "Maven.auction-system [install].executor": "Run",
+    "Maven.auction-system [org.apache.maven.plugins:maven-checkstyle-plugin:3.3.1:check].executor": "Run",
+    "Maven.auction-system [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "git-widget-placeholder": "#1 on dev",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/failb/IdeaProjects/OnlineAuctionSys/auction-common/src/main/java/com/auction/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "google-java-format.settings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\failb\IdeaProjects\OnlineAuctionSys\docs" />
+      <recent name="C:\Users\failb\IdeaProjects\OnlineAuctionSys\auction-server\src\test\java\com\auction\manager" />
       <recent name="C:\Users\failb\IdeaProjects\OnlineAuctionSys\auction-common\src\main\java\com\auction" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">

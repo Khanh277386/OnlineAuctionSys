@@ -6,7 +6,7 @@ public class AuctionItem {
   private final double startPrice;
   private final double bidIncrement;
   private final LocalDateTime startTime;
-  private final LocalDateTime endTime;
+  private volatile LocalDateTime endTime;
   private final Item item;
 
   public AuctionItem(
@@ -21,7 +21,7 @@ public class AuctionItem {
     if (startPrice <= 0 || bidIncrement <= 0) {
       throw new IllegalArgumentException("Giá khởi điểm và bước giá phải lớn hơn 0");
     }
-    if (endTime == null || endTime == null || !endTime.isAfter(startTime)) {
+    if (startTime == null || endTime == null || !endTime.isAfter(startTime)) {
       throw new IllegalArgumentException("Thời gian kết thúc phải sau thời gian bắt đầu");
     }
     this.item = item;
@@ -29,6 +29,10 @@ public class AuctionItem {
     this.bidIncrement = bidIncrement;
     this.startTime = startTime;
     this.endTime = endTime;
+  }
+
+  public void extendEndTime(long seconds) {
+      this.endTime = this.endTime.plusSeconds(seconds);
   }
 
   public double getStartPrice() {

@@ -25,7 +25,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.auction.server.ServerMain</mainClass>
+                    <mainClass>com.auction.server.Demo_ClaudeTest</mainClass>
                 </configuration>
             </plugin>
         </plugins>

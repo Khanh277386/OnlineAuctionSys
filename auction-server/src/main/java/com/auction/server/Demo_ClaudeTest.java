@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /** Chương trình chạy thử toàn bộ luồng nghiệp vụ trên console (chưa có GUI/Socket). */
-public class ServerMain {
+public class Demo_ClaudeTest {
 
   public static void main(String[] args) throws Exception {
     UserManager userManager = UserManager.getInstance();
@@ -58,20 +58,10 @@ public class ServerMain {
     // 4. Hai người đặt giá cùng lúc trên hai luồng
     Thread t1 =
         new Thread(
-            new Runnable() {
-              @Override
-              public void run() {
-                tryBid(auction, alice, 21_000_000);
-              }
-            });
+                () -> tryBid(auction, alice, 21_000_000));
     Thread t2 =
         new Thread(
-            new Runnable() {
-              @Override
-              public void run() {
-                tryBid(auction, bob, 21_000_000);
-              }
-            });
+                () -> tryBid(auction, bob, 21_000_000));
     t1.start();
     t2.start();
     t1.join();

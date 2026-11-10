@@ -23,38 +23,31 @@ public final class ItemFactory {
 
     String id = UUID.randomUUID().toString();
     try {
-      switch (type) {
-        case ELECTRONIC:
-          return new Electronic(
-              id,
-              name,
-              description,
-              seller,
-              Integer.parseInt(require(attributes, "warranty")),
-              Integer.parseInt(require(attributes, "durability")));
-
-        case ART:
-          return new Art(
-              id,
-              name,
-              description,
-              seller,
-              require(attributes, "style"),
-              Integer.parseInt(require(attributes, "age")));
-
-        case VEHICLE:
-          return new Vehicle(
-              id,
-              name,
-              description,
-              seller,
-              require(attributes, "model"),
-              require(attributes, "brand"),
-              Double.parseDouble(require(attributes, "mileage")));
-
-        default:
-          throw new IllegalArgumentException("Loại item không hợp lệ: " + type);
-      }
+        return switch (type) {
+            case ELECTRONIC -> new Electronic(
+                    id,
+                    name,
+                    description,
+                    seller,
+                    Double.parseDouble(require(attributes, "durability")),
+                    Integer.parseInt(require(attributes, "warranty")));
+            case ART -> new Art(
+                    id,
+                    name,
+                    description,
+                    seller,
+                    require(attributes, "style"),
+                    Integer.parseInt(require(attributes, "age")));
+            case VEHICLE -> new Vehicle(
+                    id,
+                    name,
+                    description,
+                    seller,
+                    require(attributes, "model"),
+                    require(attributes, "brand"),
+                    Double.parseDouble(require(attributes, "mileage")));
+            default -> throw new IllegalArgumentException("Loại item không hợp lệ: " + type);
+        };
     } catch (NumberFormatException e) {
       throw new IllegalArgumentException("Thuộc tính số không hợp lệ: " + e.getMessage());
     }
