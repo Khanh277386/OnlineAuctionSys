@@ -1,1 +1,26 @@
 
+# ===== Maven =====
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# ===== IntelliJ IDEA =====
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ===== Dữ liệu sinh ra khi chạy server =====
+data/
+*.dat
+*.ser
+
+# ===== Hệ điều hành =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Log =====
+*.log

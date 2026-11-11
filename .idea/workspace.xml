@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="ci: add GitHub Auctions workflows">
+      <change afterPath="$PROJECT_DIR$/docs/umldiagram.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/factory/ItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/factory/ItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/AuctionItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/AuctionItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auction-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/Demo_ClaudeTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="SimpleSourceFile" />
+        <option value="Class" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Khanh277386&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Khanh277386/OnlineAuctionSys.git&quot;,
+    &quot;accountId&quot;: &quot;4d969ea9-172c-4082-95ff-6b2c96fefff7&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;Khanh277386&quot;,
+    &quot;repository&quot;: &quot;OnlineAuctionSys&quot;
+  }
+}</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000526583011608" />
+      <entry key="S2" value="1.254700171976235" />
+      <entry key="S5" value="1.877043007389355" />
+      <entry key="S10" value="2.3244146497269575" />
+      <entry key="S30" value="2.7451516118617936" />
+      <entry key="S60" value="2.965311310008008" />
+      <entry key="M2" value="3.687088384263655" />
+      <entry key="M5" value="6.156122705092416" />
+      <entry key="M10" value="10.321941578877667" />
+      <entry key="M15" value="14.96328585072954" />
+      <entry key="M30" value="26.581350312307574" />
+      <entry key="H1" value="38.916457554901605" />
+      <entry key="H2" value="48.300278954793775" />
+      <entry key="H4" value="54.160942727645356" />
+      <entry key="D1" value="59.784624806776286" />
+      <entry key="W1" value="60.824416392645766" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.3978503651950474E-189" />
+      <entry key="S10" value="3.738788605633646E-95" />
+      <entry key="S30" value="3.380399216563084E-32" />
+      <entry key="S60" value="2.0198584064531252E-16" />
+      <entry key="M2" value="1.789578577017217E-8" />
+      <entry key="M5" value="0.0011651384652221536" />
+      <entry key="M10" value="0.047970810547319616" />
+      <entry key="M15" value="0.16610492357815868" />
+      <entry key="M30" value="0.5759692346476607" />
+      <entry key="H1" value="1.073094094379908" />
+      <entry key="H2" value="1.4649226207025743" />
+      <entry key="H4" value="1.7116601364923134" />
+      <entry key="D1" value="1.9487699993534067" />
+      <entry key="W1" value="1.9925997135121558" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9460576467255959" />
+      <entry key="MS500" value="0.9894430183856304" />
+      <entry key="S2" value="1.2450572100279236" />
+      <entry key="S5" value="1.8663844914194976" />
+      <entry key="S10" value="2.3166287929112834" />
+      <entry key="S30" value="2.7417707154290945" />
+      <entry key="S60" value="2.9630621122332537" />
+      <entry key="M2" value="3.684474872460529" />
+      <entry key="M5" value="6.1544297397101" />
+      <entry key="M10" value="10.367373898186996" />
+      <entry key="M15" value="15.126881160932918" />
+      <entry key="M30" value="27.154834839178967" />
+      <entry key="H1" value="39.98753188294682" />
+      <entry key="H2" value="49.763865745664006" />
+      <entry key="H4" value="55.871827989873346" />
+      <entry key="D1" value="61.7332480246051" />
+      <entry key="W1" value="62.81699466411727" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3KsFBvKGLlQxlQmcqMQh9dmskJD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Demo_ClaudeTest.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.ServerMain.executor": "Run",
+    "Git.Working.Tree.Tab.closed.by.user": "closed",
+    "JUnit.AdminTest.executor": "Run",
+    "JUnit.AuctionBiddingTest.executor": "Run",
+    "JUnit.AuctionManagerTest.executor": "Run",
+    "JUnit.AuctionTest.executor": "Run",
+    "JUnit.BidderTest.executor": "Run",
+    "JUnit.ItemFactoryTest.executor": "Run",
+    "JUnit.ItemManagerTest.executor": "Run",
+    "JUnit.UserManagerTest.executor": "Run",
+    "Maven.auction-system [install].executor": "Run",
+    "Maven.auction-system [org.apache.maven.plugins:maven-checkstyle-plugin:3.3.1:check].executor": "Run",
+    "Maven.auction-system [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "git-widget-placeholder": "#1 on dev",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/failb/IdeaProjects/OnlineAuctionSys/auction-common/src/main/java/com/auction/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "google-java-format.settings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\failb\IdeaProjects\OnlineAuctionSys\docs" />
+      <recent name="C:\Users\failb\IdeaProjects\OnlineAuctionSys\auction-server\src\test\java\com\auction\manager" />
+      <recent name="C:\Users\failb\IdeaProjects\OnlineAuctionSys\auction-common\src\main\java\com\auction" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.auction.server" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.auction.model" />
+      <recent name="com.auction.manager" />
+      <recent name="com.auction.factory" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OnlineAuctionSys-dev" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OnlineAuctionSys" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-ac68fc9d2b05-intellij.indexing.shared.core-IU-263.7307.200" />
+        <option value="bundled-js-predefined-d6986cc7102b-56aff7b04f6f-JavaScript-IU-263.7307.200" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="" />
+      <created>1792338237317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792338237317</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="các lớp cơ bản" />
+    <MESSAGE value="lõi của hệ thống đấu giá" />
+    <MESSAGE value="feat(auction): cài đặt các lớp Auction, AuctionItem, Bid và mẫu Observer -m &#10;- Thêm giao diện Observer, Subject và enum AuctionStatus&#10;- Cài đặt AuctionItem quản lý giá, thời gian và gia hạn anti-sniping&#10;- Cài đặt lớp Bid và phương thức thanh toán đồng bộ processPayment&#10;- Cài đặt lớp Auction dùng ReentrantLock xử lý đặt giá đồng thời&#10;- Bổ sung ngoại lệ InvalidBidException và AuctionClosedException&quot;" />
+    <MESSAGE value="feat: gộp toàn bộ 4 nhánh" />
+    <MESSAGE value="style: apply Google Java Style and add CheckStyle" />
+    <MESSAGE value="ci: add GitHub Auctions workflows" />
+    <option name="LAST_COMMIT_MESSAGE" value="ci: add GitHub Auctions workflows" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/src/Main.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/Auction.java</url>
+          <line>161</line>
+          <placement>INTER_LINE</placement>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/Main.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/Main.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/client/src/Main.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
