@@ -1,9 +1,5 @@
 package com.auction.model;
 
-import com.auction.exception.AuctionClosedException;
-import com.auction.exception.InvalidBidException;
-import com.auction.observer.Observer;
-import com.auction.observer.Subject;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,12 +7,17 @@ import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.locks.ReentrantLock;
 
+import com.auction.exception.AuctionClosedException;
+import com.auction.exception.InvalidBidException;
+import com.auction.observer.Observer;
+import com.auction.observer.Subject;
+
 public class Auction implements Entity, Subject {
   private final String id;
   private final AuctionItem auctionItem;
-  private final ReentrantLock lock = new ReentrantLock();
+  private transient final ReentrantLock lock = new ReentrantLock();
   private final List<Bid> bidHistory = new ArrayList<>();
-  private final List<Observer> observers = new CopyOnWriteArrayList<>();
+  private transient final List<Observer> observers = new CopyOnWriteArrayList<>();
   private volatile double currentPrice;
   private volatile Bidder leading;
   private volatile AuctionStatus status;

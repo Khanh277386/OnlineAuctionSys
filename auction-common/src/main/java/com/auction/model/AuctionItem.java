@@ -9,6 +9,7 @@ public class AuctionItem {
   private volatile LocalDateTime endTime;
   private final Item item;
 
+  private static final long serialVersionUID = 1L;
   public AuctionItem(
       Item item,
       double startPrice,

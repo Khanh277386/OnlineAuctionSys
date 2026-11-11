@@ -2,6 +2,7 @@ package com.auction.model;
 
 public abstract class Item implements Entity {
   private final String Id;
+  private static final long serialVersionUID = 1L;
   private final Seller seller;
   private String name;
   private String description;

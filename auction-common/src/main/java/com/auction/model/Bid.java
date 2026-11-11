@@ -10,6 +10,8 @@ public final class Bid implements Entity, Comparable<Bid> {
   private final double amount;
   private final LocalDateTime timestamp;
 
+  private static final long serialVersionUID = 1L;
+  
   public Bid(String auctionId, Bidder bidder, double amount) {
     if (amount < 0) throw new IllegalArgumentException("Số tiền phải lớn hơn 0");
     this.id = UUID.randomUUID().toString();

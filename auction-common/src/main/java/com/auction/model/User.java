@@ -5,6 +5,7 @@ public abstract class User implements Entity {
   public static final String ROLE_BIDDER = "BIDDER";
   public static final String ROLE_SELLER = "SELLER";
 
+  private static final long serialVersionUID = 1L;
   private final String id;
   private final String name;
   private final String password;
