@@ -38,7 +38,6 @@ public class RegisterFormController {
         } catch (Exception e) {
             showAlert(Alert.AlertType.ERROR, "SYSTEM ERROR", e.getMessage());
         }
-        System.out.println("Hello");
     }
     private void switchToLoginForm(ActionEvent event) {
         try {

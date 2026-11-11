@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="ci: add GitHub Auctions workflows">
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/LoginFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/LoginOrRegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/RegisterFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/login-form-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/login-or-register-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/register-form-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/BidderMainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/admin-main-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/bidder-history-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/bidder-main-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/create-auction-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/seller-main-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/Demo_ClaudeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/Demo_ClaudeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/RegisterFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/RegisterFormController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,51 +136,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Demo_ClaudeTest.executor": "Run",
-    "Application.Launcher.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.ServerMain.executor": "Run",
-    "Git.Working.Tree.Tab.closed.by.user": "closed",
-    "JUnit.AdminTest.executor": "Run",
-    "JUnit.AuctionBiddingTest.executor": "Run",
-    "JUnit.AuctionManagerTest.executor": "Run",
-    "JUnit.AuctionTest.executor": "Run",
-    "JUnit.BidderTest.executor": "Run",
-    "JUnit.ItemFactoryTest.executor": "Run",
-    "JUnit.ItemManagerTest.executor": "Run",
-    "JUnit.UserManagerTest.executor": "Run",
-    "Maven.auction-system [install].executor": "Run",
-    "Maven.auction-system [org.apache.maven.plugins:maven-checkstyle-plugin:3.3.1:check].executor": "Run",
-    "Maven.auction-system [test].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/OnlineAuctionSys/auction-client/src/main/resources/com/auction/client/view",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/failb/IdeaProjects/OnlineAuctionSys/auction-common/src/main/java/com/auction/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "google-java-format.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Demo_ClaudeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Git.Working.Tree.Tab.closed.by.user&quot;: &quot;closed&quot;,
+    &quot;JUnit.AdminTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuctionBiddingTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuctionManagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BidderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItemFactoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItemManagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserManagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.auction-system [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.auction-system [org.apache.maven.plugins:maven-checkstyle-plugin:3.3.1:check].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.auction-system [test].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/IdeaProjects/OnlineAuctionSys/auction-client/src/main/resources/com/auction/client/view&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/failb/IdeaProjects/OnlineAuctionSys/auction-common/src/main/java/com/auction/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;google-java-format.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\IdeaProjects\OnlineAuctionSys\auction-client\src\main\resources\com\auction\client\view" />
@@ -271,7 +267,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/Auction.java</url>
-          <line>161</line>
+          <line>162</line>
           <placement>INTER_LINE</placement>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
