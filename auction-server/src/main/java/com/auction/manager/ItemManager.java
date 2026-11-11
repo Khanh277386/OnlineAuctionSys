@@ -7,6 +7,11 @@ import com.auction.model.Item;
 import com.auction.model.ItemType;
 import com.auction.model.Seller;
 import com.auction.model.User;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -87,6 +92,25 @@ public final class ItemManager {
       this.items.clear();
       this.items.putAll(loaded);
       System.out.println("[ItemManager] Đã khôi phục " + this.items.size() + " sản phẩm từ " + filePath);
+    }
+  }
+
+  private static final class DataStorage {
+    private static void save(String filePath, ConcurrentHashMap<String, Item> items) {
+      try (ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(filePath))) {
+        output.writeObject(items);
+      } catch (IOException e) {
+        throw new IllegalStateException("Không thể lưu dữ liệu sản phẩm", e);
+      }
+    }
+
+    @SuppressWarnings("unchecked")
+    private static ConcurrentHashMap<String, Item> load(String filePath) {
+      try (ObjectInputStream input = new ObjectInputStream(new FileInputStream(filePath))) {
+        return (ConcurrentHashMap<String, Item>) input.readObject();
+      } catch (IOException | ClassNotFoundException e) {
+        return null;
+      }
     }
   }
 }
