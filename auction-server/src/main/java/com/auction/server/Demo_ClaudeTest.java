@@ -36,7 +36,7 @@ public class Demo_ClaudeTest {
       System.out.println("Đăng nhập thất bại như mong đợi: " + e.getMessage());
     }
 
-    // 2. Seller thêm sản phẩm qua ItemManager (bên trong dùng ItemFactory)
+    //thêm sản phẩm
     Map<String, String> attrs = new HashMap<>();
     attrs.put("warranty", "12");
     attrs.put("durability", "95");
@@ -45,7 +45,7 @@ public class Demo_ClaudeTest {
             seller, ItemType.ELECTRONIC, "MacBook Air M3", "16GB RAM, 512GB SSD", attrs);
     laptop.printInfo();
 
-    // 3. Tạo phiên: bắt đầu ngay, kéo dài 4 giây
+    // 3. Tạo phiên
     LocalDateTime now = LocalDateTime.now();
     final Auction auction =
         auctionManager.createAuction(seller, laptop, 20_000_000, 500_000, now, now.plusSeconds(4));

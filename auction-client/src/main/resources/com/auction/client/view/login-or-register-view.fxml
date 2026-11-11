@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="850.0" spacing="15.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.auction.client.controller.LoginOrRegisterController">
+    <children>
+        <!-- Nhóm Tiêu đề -->
+        <VBox alignment="CENTER" spacing="-20.0">
+            <children>
+                <Label text="UET" textFill="#151a22">
+                    <font>
+                        <Font name="System Bold" size="80.0" />
+                    </font>
+                </Label>
+                <Label text="AUCTION" textFill="#151a22">
+                    <font>
+                        <Font name="System Bold" size="80.0" />
+                    </font>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets bottom="40.0" />
+            </VBox.margin>
+            <effect>
+                <!-- Hiệu ứng đổ bóng mờ dưới chân chữ -->
+                <DropShadow color="#00000033" offsetX="3.0" offsetY="5.0" radius="10.0" />
+            </effect>
+        </VBox>
+
+        <!-- Nhóm Nút bấm sử dụng Inline Style (Không cần CSS) -->
+        <Button fx:id="loginButton" focusTraversable="false" mnemonicParsing="false" prefHeight="45.0" prefWidth="650.0" style="-fx-background-color: #151A22; -fx-text-fill: #FFFFFF; -fx-background-radius: 25; -fx-cursor: hand;" text="LOGIN" onAction="#onLoginClick" >
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="registerButton" focusTraversable="false" mnemonicParsing="false" prefHeight="45.0" prefWidth="650.0" style="-fx-background-color: #151A22; -fx-text-fill: #FFFFFF; -fx-background-radius: 25; -fx-cursor: hand;" text="REGISTER" onAction="#onRegisterClick">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</VBox>

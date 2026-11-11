@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="ci: add GitHub Auctions workflows">
-      <change afterPath="$PROJECT_DIR$/docs/umldiagram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/LoginFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/LoginOrRegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/RegisterFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/login-form-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/login-or-register-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/register-form-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/factory/ItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/factory/ItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/AuctionItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/AuctionItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auction-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/Demo_ClaudeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/Demo_ClaudeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/Demo_ClaudeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +28,10 @@
       <list>
         <option value="package-info" />
         <option value="SimpleSourceFile" />
-        <option value="Class" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,7 +53,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Khanh277386/OnlineAuctionSys.git&quot;,
-    &quot;accountId&quot;: &quot;4d969ea9-172c-4082-95ff-6b2c96fefff7&quot;
+    &quot;accountId&quot;: &quot;7ddad94d-1bea-4763-9ff7-fa0b0d4ce96e&quot;
   },
   &quot;recentNewPullRequestHead&quot;: {
     &quot;server&quot;: {
@@ -136,6 +143,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Demo_ClaudeTest.executor": "Run",
+    "Application.Launcher.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.ServerMain.executor": "Run",
     "Git.Working.Tree.Tab.closed.by.user": "closed",
@@ -159,8 +167,9 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
-    "git-widget-placeholder": "#1 on dev",
+    "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/OnlineAuctionSys/auction-client/src/main/resources/com/auction/client/view",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -172,14 +181,19 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "google-java-format.settings"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\OnlineAuctionSys\auction-client\src\main\resources\com\auction\client\view" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\OnlineAuctionSys\auction-client\src\main\java\com\auction\client" />
       <recent name="C:\Users\failb\IdeaProjects\OnlineAuctionSys\docs" />
       <recent name="C:\Users\failb\IdeaProjects\OnlineAuctionSys\auction-server\src\test\java\com\auction\manager" />
       <recent name="C:\Users\failb\IdeaProjects\OnlineAuctionSys\auction-common\src\main\java\com\auction" />
@@ -209,8 +223,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-ac68fc9d2b05-intellij.indexing.shared.core-IU-263.7307.200" />
-        <option value="bundled-js-predefined-d6986cc7102b-56aff7b04f6f-JavaScript-IU-263.7307.200" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
       </set>
     </attachedChunks>
   </component>
