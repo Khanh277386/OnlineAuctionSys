@@ -66,9 +66,7 @@ public class Auction implements Entity, Subject {
       if (status != AuctionStatus.FINISHED || leading == null) {
         throw new IllegalStateException("Chỉ thanh toán được khi phiên kết thúc và có người thắng");
       }
-      if (!leading.deductFund(currentPrice)) {
-        throw new IllegalStateException("Người thắng không đủ tiền trả");
-      }
+      // Tiền đã được trừ từ lúc đặt giá nên chỉ cần chuyển doanh thu cho Seller
       auctionItem.getItem().getSeller().addRevenue(currentPrice);
       status = AuctionStatus.PAID;
     } finally {
@@ -82,6 +80,10 @@ public class Auction implements Entity, Subject {
       if (status == AuctionStatus.PAID || status == AuctionStatus.CANCELLED) {
         throw new IllegalStateException("Phiên đã kết thúc");
       }
+      // Hoàn lại tiền cho người đang dẫn đầu nếu phiên bị hủy
+      if (leading != null) {
+        leading.addFund(currentPrice);
+      }
       status = AuctionStatus.CANCELLED;
     } finally {
       lock.unlock();
@@ -89,7 +91,7 @@ public class Auction implements Entity, Subject {
   }
 
   public Bid placeBid(Bidder bidder, double amount)
-      throws InvalidBidException, AuctionClosedException {
+          throws InvalidBidException, AuctionClosedException {
     if (bidder == null) {
       throw new InvalidBidException("Thiếu người");
     }
@@ -97,7 +99,7 @@ public class Auction implements Entity, Subject {
     lock.lock();
     try {
       if (status != AuctionStatus.RUNNING
-          || LocalDateTime.now().isAfter(auctionItem.getEndTime())) {
+              || LocalDateTime.now().isAfter(auctionItem.getEndTime())) {
         throw new AuctionClosedException("Phiên đấu không còn nhận giá");
       }
 
@@ -113,10 +115,17 @@ public class Auction implements Entity, Subject {
       }
       if (amount < minAllowed) {
         throw new InvalidBidException(
-            "Phải đặt từ " + String.format("%,.0f", minAllowed) + " đổ lên");
+                "Phải đặt từ " + String.format("%,.0f", minAllowed) + " đổ lên");
       }
-      if (amount > bidder.getBalance()) {
+
+      // Trừ tiền ngay lập tức; nếu không đủ số dư sẽ báo lỗi
+      if (!bidder.deductFund(amount)) {
         throw new InvalidBidException("Số dư không đủ đặt");
+      }
+
+      // Hoàn tiền lại cho người dẫn đầu trước đó
+      if (leading != null) {
+        leading.addFund(currentPrice);
       }
 
       newBid = new Bid(id, bidder, amount);

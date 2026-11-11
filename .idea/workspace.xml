@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="ci: add GitHub Auctions workflows">
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/LoginFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/LoginOrRegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/RegisterFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/login-form-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/login-or-register-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/register-form-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="5ad0388d-d9e9-44ad-8bb2-5d9f18a4c3ad" name="Changes" comment="Creat main UI form">
+      <change afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/store/InMemoryStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/Demo_ClaudeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-server/src/main/java/com/auction/server/Demo_ClaudeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/BidderMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/BidderMainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/RegisterFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-client/src/main/java/com/auction/client/controller/RegisterFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/bidder-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/bidder-main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/login-form-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/login-form-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/register-form-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/auction-client/src/main/resources/com/auction/client/view/register-form-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/Auction.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/Auction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +140,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Application.Demo_ClaudeTest.executor": "Run",
     "Application.Launcher.executor": "Run",
     "Application.Main.executor": "Run",
@@ -259,7 +258,8 @@
     <MESSAGE value="feat: gộp toàn bộ 4 nhánh" />
     <MESSAGE value="style: apply Google Java Style and add CheckStyle" />
     <MESSAGE value="ci: add GitHub Auctions workflows" />
-    <option name="LAST_COMMIT_MESSAGE" value="ci: add GitHub Auctions workflows" />
+    <MESSAGE value="Creat main UI form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creat main UI form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -268,12 +268,6 @@
           <url>file://$PROJECT_DIR$/src/src/Main.java</url>
           <line>10</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
-          <url>file://$PROJECT_DIR$/auction-common/src/main/java/com/auction/model/Auction.java</url>
-          <line>161</line>
-          <placement>INTER_LINE</placement>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/common/src/Main.java</url>

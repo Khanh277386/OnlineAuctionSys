@@ -23,7 +23,7 @@ public abstract class User implements Entity {
   public String getName() {
     return name;
   }
-
+  public String getPassword(){return password;}
   public boolean checkPassword(String input) {
     return password.equals(input);
   }
