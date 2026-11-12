@@ -3,7 +3,7 @@ package com.auction.model;
 public class Electronic extends Item {
   private final double durability;
   private final int warranty;
-
+  private static final long serialVersionUID = 1L;
   public Electronic(
       String id, String name, String description, Seller seller, double durability, int warranty) {
     super(id, name, description, seller);
