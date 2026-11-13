@@ -1,7 +1,7 @@
 package com.auction.model;
 
 public class Seller extends User {
-
+  private static final long serialVersionUID = 1L;
   private double balance;
 
   public Seller(String id, String name, String password) {
